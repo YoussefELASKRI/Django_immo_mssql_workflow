@@ -25,7 +25,7 @@ SECRET_KEY = 'y9f4v)&8js1fa#_png1=291d)xmi=^m#@6@x_b52tdde@7^2^@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://immoapp.azurewebsites.net/']
 
 
 # Application definition
