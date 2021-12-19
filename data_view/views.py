@@ -23,7 +23,7 @@ def create_connection(db_file):
     return conn
 
 def index(request):
-    conn = sqlite3.connect('/home/c2f3b49718bf46a1fdf10850/db.sqlite3')
+    conn = sqlite3.connect('/tmp/8d9c3248c81cf5e/db.sqlite3')
     df = pd.read_sql_query("SELECT * FROM data_view_data_view", conn)
     total_rows = len(df.index)
     bien = total_rows + 1
