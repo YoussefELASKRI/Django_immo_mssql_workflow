@@ -17,7 +17,7 @@ def upload(request):
 # Create your connection.
     df = pd.read_csv(os.path.join(os.path.dirname(__file__),filename), delimiter=',')
     tf = df[df.balcony == True]
-    conn = db.connect('../db.sqlite3')
+    conn = db.connect('/home/c2f3b49718bf46a1fdf10850/db.sqlite3')
     tf.to_sql(name='data_view_data_view', con=conn, if_exists='append')
     msg = 'File successfully saved'
     return redirect("https://immoapp.azurewebsites.net/data_view/")
